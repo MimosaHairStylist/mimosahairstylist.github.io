@@ -1,0 +1,495 @@
+
+.sfondo{
+    width: 100%;
+}
+/* Contenitore orari */
+.orari-container {
+    flex: 1;  /* Permette alla mappa e agli orari di occupare lo stesso spazio */
+    background: #FAF3E3; /* Sfondo delicato */
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Titolo orari */
+.orari-container h2 {
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+    color: #7A4D23;
+    text-align: center;
+}
+
+/* Stile orari */
+.orari-item, .orari-item2 {
+    justify-content: space-between;
+    padding: 1%;
+    border-bottom: 1px solid #D1B07F;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.orari-item2 {
+    font-weight: bold;
+    color: #A52A2A; /* Rosso elegante per la chiusura */
+}
+
+/* Contenitore mappa */
+.container-mappa {
+    flex: 1;
+    background: #ffffff;
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mappa {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Contenitore row */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;  /* Assicura che gli elementi abbiano la stessa altezza */
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 2%;
+    height: 100%;
+}
+
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.orari-item,
+.orari-item2 {
+    display: flex;
+    align-items: center; /* Mantiene gli elementi allineati verticalmente */
+    border-bottom: 1px solid #ddd;
+    padding: 0.5%;
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    justify-content: space-between; /* Spazio massimo tra giorno e orario */
+}
+
+/* Stile per i giorni */
+.giorno {
+    font-weight: bold;
+    color: #cba116;
+    width: 120px; /* Fissa la larghezza per mantenere l'allineamento */
+    text-align: left;
+}
+
+/* Stile per gli orari */
+.orario-giorno {
+    flex-grow: 1; /* Permette agli orari di occupare lo spazio rimanente */
+    text-align: right;
+}
+
+/*
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block
+}
+*/
+summary {
+    display: list-item
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+img {
+    border-style: none
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+/* End extract */
+html,
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #2a2a2a;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f8f7f5 !important
+}
+
+.separator {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #ffe8a3, #ffb27b, #ffe8a3);
+    border-radius: 5px;
+}
+
+h1 {
+    
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.footer {
+    background: linear-gradient(to right, #a9a7a7, #645951);
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+
+.footer a {
+    color: #c58332; /* Colore dorato per i link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #ffffff; /* Cambia in bianco al passaggio del mouse */
+}
+
+.footerbutton {
+    display: inline-block;
+    background: white ;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.footerbutton:hover {
+    background: #ffaa00;
+    transform: scale(1.1);
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.text {
+    max-width: 300px;
+}
+
+.text h2 {
+    font-size: 24px;
+    color: #f4a261;
+    margin: 0 0 10px;
+}
+
+.text p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+/* Testo */
+.professionale-text {
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: #333; /* Colore del testo più scuro per contrasto */
+    max-width: 60%; /* Limita la larghezza del testo per non farlo occupare troppo spazio */
+}
+
+.professionale-text h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Dimensione dinamica del titolo */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.professionale-text p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Testo dinamico per il paragrafo */
+    color: #555; /* Colore del testo del paragrafo più chiaro */
+    line-height: 1.6;
+}
+
+.professionale {
+    padding: 1%;
+    display: flex;
+    flex-direction: row; /* Assicura che immagine e testo siano affiancati */
+    align-items: center;
+    justify-content:space-around; /* Spazio tra l'immagine e il testo */
+    background: linear-gradient(to right, #b4b4b4, #ddd1c9);
+    margin:1.5%;
+    /*padding: 17px;*/
+    border-radius: 15px;    
+    /*box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più morbida */
+    width: 96%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+/* Impedisce che gli effetti di ombra escano dal bordo arrotondato */
+}
+
+.professionale:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); 
+} 
+
+/* Immagine */
+.professionale img {
+    width:37%; /* Immagine più grande */
+    height: 100%;
+    border-radius: 15px; /* Angoli arrotondati */
+    /*box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);  Ombra più morbida */
+    object-fit: cover;  /*Assicura che l'immagine non distorca */
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #8B4513, #A52A2A);
+    /* Sfumatura da Marrone a Rosso */
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100px;
+    /* Dimensione del logo */
+    height: auto;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    color: #FFD700;
+    /* Colore oro per le etichette */
+}
+
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.image-2 {
+    filter: brightness(40%);
+    max-width: 100%;
+    height: auto
+}
+
+.mimosaimage {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: inherit
+}
+
+.fotolocale {
+    padding-bottom: 1%;
+    position: relative;
+    width: 100%;
+    height: 40vh; /* Impostato a 100vh per coprire tutta l'altezza della finestra */
+    overflow: hidden;
+}
+
+.fotolocale img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assicura che l'immagine si adatti mantenendo il suo rapporto di aspetto */
+    filter: brightness(60%); /* Abbassa la luminosità dell'immagine per migliorare il contrasto del testo */
+}
+
+.scrittelocale {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra il testo sia orizzontalmente che verticalmente */
+    text-align: center;
+    color: white; /* Colore del testo bianco per contrastare con lo sfondo scuro */
+    z-index: 1; /* Assicura che il testo sia sopra l'immagine */
+    padding: 20px;
+}
+.testolocale {
+    font-size: clamp(2rem, 5vw, 4rem); /* Dimensione dinamica del font per il titolo */
+    font-weight: bold;
+    letter-spacing: 2px; /* Spaziatura tra le lettere */
+    margin-bottom: 10px;
+}
+
+.sottotestolocale {
+    font-size: clamp(1.5rem, 3.5vw, 3rem); /* Dimensione dinamica per il secondo titolo */
+    font-weight: lighter;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: linear-gradient(to right, #a9a7a7, #645951);
+}
+
+.nav ul {
+    /*display: flex;*/
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.social a {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #d4af37;
+}
+
+
+
+
+
+
+.logo-mimosa {
+
+    position: relative;
+    align-items: center;
+}
+
+.logo-mimosa2 {
+
+    position: static;
+    align-items: center;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(45%);
+}
+
+.logo-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    /* Regola la dimensione del logo in base alle necessità */
+}
+
+/* Contenitore della galleria */
+.gallery {
+    padding: 2%;
+}
+
+/* Struttura della griglia */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Stile delle immagini */
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    /*border-radius: 10px;*/
+}
