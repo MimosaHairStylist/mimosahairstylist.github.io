@@ -298,10 +298,10 @@ h6 {
 }
 
 .professionale img {
-    width: 40%;
+    width: 45%;
     /* puoi regolarlo a piacere */
     height: auto;
-    object-fit: cover;
+    object-fit:fill;
     border-radius: 15px;
 }
 
