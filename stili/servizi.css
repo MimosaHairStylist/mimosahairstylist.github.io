@@ -1,4 +1,3 @@
-/* Stili generali */
 html,
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -58,7 +57,6 @@ body {
     height: auto;
 }
 
-/* Sezione Contatti */
 .contact-section {
     text-align: center;
     padding: 40px 20px;
@@ -83,7 +81,6 @@ body {
     color: #fbf2dc;
 }
 
-/* Immagini */
 .mimosaimage {
     width: 100%;
     height: auto;
@@ -308,7 +305,6 @@ body {
     line-height: 1.5;
 }
 
-/* Nuovi stili per la sezione dei trattamenti */
 section {
     max-width: 1100px;
     margin: 10px auto;
@@ -405,7 +401,6 @@ section p {
     line-height: 1.5;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .treatment-box {
         grid-template-columns: 1fr 1fr;
