@@ -301,7 +301,7 @@ h6 {
     width: 45%;
     /* puoi regolarlo a piacere */
     height: auto;
-    object-fit:fill;
+    object-fit:cover;
     border-radius: 15px;
 }
 
