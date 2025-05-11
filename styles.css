@@ -266,21 +266,19 @@ h6 {
 
 
 .chi-siamo {
-    max-width: 900px;
-    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
 }
 
 .chi-siamo-titolo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.0rem;
     text-align: center;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: bold;
-    border-bottom: 2px solid #ccc;
-    display: inline-block;
-    padding-bottom: 5px;
+    color: black;
+    margin: 25px 0 25px;
 }
 
 .professionale {
-    gap:1%;
+    gap: 1%;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -301,7 +299,7 @@ h6 {
     width: 45%;
     /* puoi regolarlo a piacere */
     height: auto;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 15px;
 }
 
@@ -322,7 +320,7 @@ h6 {
     margin-bottom: 10px;
     font-weight: bold;
     color: #f1e2c9;
-    text-align: left; 
+    text-align: left;
 }
 
 .professionale-text p {
@@ -490,29 +488,32 @@ a {
 }
 
 .benvenuto {
-    text-align: center;
-    width: 90%;
-    margin-top: 2%;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    border-left: 5px solid #d4af37;
-    /* color oro elegante */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    text-align: left;
+    margin: 10px auto;
+    padding: 30px 40px;
+    font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #fffffc 0%, #efebeb 100%);
+    border-left: 6px solid #c29f45;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    color: #333;
 }
 
 .benvenuto h2 {
-    font-size: 24px;
-    color: #2a2a2a;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #222;
+    font-weight: 600;
+}
+
+.benvenuto h2 span {
+    color: #c29f45;
+    font-style: italic;
 }
 
 .benvenuto p {
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
 }
 
 .cta-whatsapp {
