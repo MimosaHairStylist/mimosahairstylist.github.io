@@ -105,6 +105,7 @@ body {
 /* Sezione Membri Principali */
 .team-leaders {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .footerbutton {
@@ -129,12 +130,13 @@ body {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 38%;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+  
 .leader-card:hover {
     transform: scale(1.05);
 }
@@ -146,7 +148,7 @@ body {
 }
 
 .leader-card h3 {
-    color: #c25810;
+    color: #7f7e6f;
 }
 
 /* Sezione Team Completo */
